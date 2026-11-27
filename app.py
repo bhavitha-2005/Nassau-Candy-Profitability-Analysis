@@ -91,7 +91,7 @@ NORMALIZED_PRODUCT_FACTORY = {
 @st.cache_data
 def load_data():
 
-    file_path = OUTPUT_DIR / "nassau_cleaned.csv"
+    file_path = BASE_DIR / "nassau_cleaned.csv"
 
     if not file_path.exists():
         raise FileNotFoundError(
